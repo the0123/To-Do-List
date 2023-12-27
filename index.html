@@ -8,23 +8,19 @@
 </head>
     <body>
         <form>
-        <label type="text" id="inputLabel">Enter a task:</label><br>
-    
-        <input type="text" id="taskInput" placeholder="Walk the dog">
-        <input type="button" value="Add task" id="submitButton">
-        <input type="reset">
+            <!--Input for task-->
+            <label type="text" id="inputLabel">Enter a task:</label><br>
+            <input type="text" id="taskInput" placeholder="Walk the dog">
 
-        <input type="button" value="Delete All Tasks" id="deleteAll">
+            <!--Buttons to add, reset, and delete all tasks-->
+            <input type="button" value="Add task" id="submitButton">
+            <input type="reset"> <!--Resets the input box-->
+            <input type="button" value="Delete All Tasks" id="deleteAll">
+            <hr>
 
-
-        <!--
-        Add some kind of form or something where the tasks can go
-        In the css file, the form should be able to expand based on added tasks
-        -->
-        <ul id="taskList"></ul>
-
+            <!--Lists for tasks-->
+            <ul id="taskList"></ul>
         </form>
-
         <script src="index.js"></script>
     </body>
 </html>

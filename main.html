@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Page title and favicon-->
+    <title>To Do List</title>
+    <link rel="icon" type="image/jpg" href="images/clipboard.jpg">
+</head>
+    <body>
+        <div class="inputContainer">
+            <!--Input for task-->
+            <label type="text" id="inputLabel">Enter a task below or delete all existing:</label><br>
+            <input type="text" id="taskInput" placeholder="Walk the dog">
+
+            <!--Buttons to add tasks, delete all tasks, and to show help page-->
+            <input type="button" value="Add task" id="submitButton">
+            <input type="button" value="Delete All Tasks" id="deleteAll">
+            <a href="helpPage.html"><input type="button" value="Help" id="helpButton"></a>
+            <hr>
+        </div>
+            
+        <!--Lists for tasks-->
+        <a href="#" id="task">
+            <ul id="taskList"></ul>
+        </a>
+
+        <script src="index.js"></script>
+    </body>
+</html>

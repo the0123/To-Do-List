@@ -14,6 +14,17 @@ document.getElementById("submitButton").onclick = function(){
 
     // Appends the list item node as a child to the task list
     document.getElementById("taskList").appendChild(node);
+
+    // Create a delete button for each task
+    const deleteButton = document.createElement("button");
+    deleteButton.style.margin = "10px";
+    deleteButton.textContent = "Delete task";
+    node.appendChild(deleteButton);
+
+    // Functionality for delete button
+    deleteButton.addEventListener("click", () => {
+      deleteButton.parentElement.remove();
+    });
   };
 
   // Used to delete all tasks from the unordered list

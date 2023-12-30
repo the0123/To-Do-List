@@ -16,16 +16,22 @@ document.getElementById("submitButton").onclick = function(){
     document.getElementById("taskList").appendChild(node);
   };
 
-  
   // Used to delete all tasks from the unordered list
   document.getElementById("deleteAll").onclick = function() {
-    let ul = document.getElementById("taskList");
+    let unorderedList = document.getElementById("taskList");
     // Checks if unordered list exists
-    if(ul) {
+    if(unorderedList) {
       // While it's not empty, remove each task
-      while(ul.firstChild) {
-        ul.removeChild(ul.firstChild)
+      while(unorderedList.firstChild) {
+        unorderedList.removeChild(unorderedList.firstChild)
       }
     }
   };
- 
+
+  document.getElementById("taskList").onclick = function(event) {
+    // Check if the clicked element is a list item (LI)
+    if (event.target && event.target.nodeName === "LI") {
+        // Toggle the textDecoration style between 'line-through' and 'none'
+        event.target.style.textDecoration = event.target.style.textDecoration === "line-through" ? "none" : "line-through";
+    }
+};

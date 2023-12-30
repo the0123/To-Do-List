@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!--Page title and favicon-->
+    <title>To Do List</title>
+    <link rel="icon" type="image/jpg" href="images/clipboard.jpg">
 </head>
     <body>
         <form>
@@ -19,8 +22,28 @@
             <hr>
 
             <!--Lists for tasks-->
-            <ul id="taskList"></ul>
+            <a href="#" id="taskLink">
+                <ul id="taskList"></ul>
+            </a>
+            
+
         </form>
         <script src="index.js"></script>
     </body>
 </html>
+
+<!--
+For each task created, add a checkbox at the end
+When checkbox is clicked, apply strikethrough on text
+
+Could add a checkmark box and an X box next to each task
+When checkmark box is clicked on, strikethrough text
+Click again to remove strikethrough
+When X is clicked on, delete task
+
+OR
+
+when user clicks on text, it's crossed out, they click
+again, it undoes the strikethrough
+then X button at end delete task 
+-->
